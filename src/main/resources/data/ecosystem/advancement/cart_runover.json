@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:cart",
+  "display": {
+    "icon": { "id": "minecraft:iron_sword" },
+    "title": { "text": "С путей долой" },
+    "description": { "text": "Сбить моба вагонеткой на ходу. Животных жалко, но научный интерес сильнее." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

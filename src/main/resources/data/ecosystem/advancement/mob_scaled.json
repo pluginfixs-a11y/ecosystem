@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:mob_hike",
+  "display": {
+    "icon": { "id": "minecraft:iron_chestplate" },
+    "title": { "text": "Трофей" },
+    "description": { "text": "Усиленный моб убит: чем дальше, тем жирнее — до ×4 опыта и ×3 дропа." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

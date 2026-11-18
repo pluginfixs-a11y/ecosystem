@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:root",
+  "display": {
+    "icon": { "id": "minecraft:item_frame" },
+    "title": { "text": "Призрак" },
+    "description": { "text": "Рамка с мембраной фантома: рамки нет, предмет висит, менять его можно и в невидимой." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

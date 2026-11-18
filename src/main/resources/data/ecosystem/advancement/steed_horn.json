@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:steed_ride",
+  "display": {
+    "icon": { "id": "minecraft:goat_horn" },
+    "title": { "text": "Рог-поводок" },
+    "description": { "text": "Рог, привязанный к лошади. Блестит; снять насовсем — только точильным камнем." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

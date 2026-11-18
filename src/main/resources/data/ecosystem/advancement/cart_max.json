@@ -1,0 +1,11 @@
+{
+  "parent": "ecosystem:cart",
+  "display": {
+    "icon": { "id": "minecraft:rail" },
+    "title": { "text": "Сороковка" },
+    "description": { "text": "38 б/с десять секунд подряд. Дальше — только поезд в стену." },
+    "frame": "challenge"
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } },
+  "rewards": { "experience": 50 }
+}

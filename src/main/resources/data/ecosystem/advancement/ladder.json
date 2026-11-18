@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:root",
+  "display": {
+    "icon": { "id": "minecraft:ladder" },
+    "title": { "text": "Верёвка" },
+    "description": { "text": "Лестница в лестницу — цепочка ползёт вниз. Стена не нужна, гравитация потерпит." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "id": "ecosystem",
+  "version": "${version}",
+  "name": "Ecosystem",
+  "description": "Одна вкладка достижений, которая учит механикам всего набора серверных модов: поле, котёл, лестницы, вагонетки, ПВО, варп, стол, лошади, дальние земли и рамки. Только сервер.",
+  "authors": [
+    "deaefer"
+  ],
+  "license": "MIT",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "ecosystem.Ecosystem"
+    ]
+  },
+  "mixins": [
+    "ecosystem.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_dep}",
+    "java": ">=25"
+  },
+  "recommends": {
+    "hoefarm": "*",
+    "cauldronwash": "*",
+    "ladderhang": "*",
+    "fastminecarts": "*",
+    "pvo": "*",
+    "lodestonewarps": "*",
+    "enchantxp": "*",
+    "steed": "*",
+    "mobscaler": "*",
+    "ghostframe": "*",
+    "fletcher": "*"
+  }
+}

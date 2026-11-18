@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:root",
+  "display": {
+    "icon": { "id": "minecraft:iron_hoe" },
+    "title": { "text": "Комбайн" },
+    "description": { "text": "Мотыга зашла в агробизнес: сбор, пересадка и вспашка одним кликом. Железо берёт 3×3, незерит — 5×5 и слой вверх-вниз." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

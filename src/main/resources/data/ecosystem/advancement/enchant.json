@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:root",
+  "display": {
+    "icon": { "id": "minecraft:enchanting_table" },
+    "title": { "text": "Стол" },
+    "description": { "text": "Стол платит очками опыта, а не уровнями: на сотом уровне это 300 очков вместо 2172." }
+  },
+  "criteria": { "e": { "trigger": "minecraft:enchanted_item" } }
+}

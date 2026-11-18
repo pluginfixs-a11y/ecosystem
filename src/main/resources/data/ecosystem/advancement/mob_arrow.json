@@ -1,0 +1,11 @@
+{
+  "parent": "ecosystem:mob_hike",
+  "display": {
+    "icon": { "id": "minecraft:spectral_arrow" },
+    "title": { "text": "Сюрприз" },
+    "description": { "text": "Поймать пущенную в тебя стрелу с эффектом. Стрела в инвентаре, руки целы." },
+    "frame": "goal"
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } },
+  "rewards": { "experience": 20 }
+}

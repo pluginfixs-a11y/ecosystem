@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:root",
+  "display": {
+    "icon": { "id": "minecraft:minecart" },
+    "title": { "text": "Экспресс" },
+    "description": { "text": "Вагонетка с пассажиром разгоняется сама и сносит живое с рельсов. Официально это фича." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

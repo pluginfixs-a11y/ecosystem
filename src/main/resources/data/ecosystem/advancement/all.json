@@ -1,0 +1,11 @@
+{
+  "parent": "ecosystem:root",
+  "display": {
+    "icon": { "id": "minecraft:nether_star" },
+    "title": { "text": "Свояк" },
+    "description": { "text": "По одному трюку каждого мода. После этого ты знаешь о сервере больше, чем его вики." },
+    "frame": "challenge"
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } },
+  "rewards": { "experience": 100 }
+}

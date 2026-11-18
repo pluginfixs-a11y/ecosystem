@@ -1,0 +1,11 @@
+{
+  "parent": "ecosystem:ghost_hide",
+  "display": {
+    "icon": { "id": "minecraft:name_tag" },
+    "title": { "text": "Возврат" },
+    "description": { "text": "Бить по висящему тексту — табличка возвращается со всеми строками. Магия — это системный вызов." },
+    "frame": "goal"
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } },
+  "rewards": { "experience": 20 }
+}

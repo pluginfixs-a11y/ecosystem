@@ -1,0 +1,11 @@
+{
+  "parent": "ecosystem:warp_anchor",
+  "display": {
+    "icon": { "id": "minecraft:map" },
+    "title": { "text": "Туда и обратно" },
+    "description": { "text": "Два варпа за десять минут. Кулдаун придумали для терпеливых." },
+    "frame": "goal"
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } },
+  "rewards": { "experience": 30 }
+}

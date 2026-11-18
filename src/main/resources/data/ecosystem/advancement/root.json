@@ -1,0 +1,9 @@
+{
+  "display": {
+    "background": "minecraft:gui/advancements/backgrounds/stone",
+    "icon": { "id": "minecraft:knowledge_book" },
+    "title": { "text": "Экосистема" },
+    "description": { "text": "Механики серверных модов в одном дереве. Вкладка открывается на первом входе — дальше сам." }
+  },
+  "criteria": { "join": { "trigger": "minecraft:tick" } }
+}

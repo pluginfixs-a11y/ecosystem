@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:field",
+  "display": {
+    "icon": { "id": "minecraft:farmland" },
+    "title": { "text": "Целина" },
+    "description": { "text": "Заросшее поле пашется вместе с травой: сносит её и не спрашивает." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

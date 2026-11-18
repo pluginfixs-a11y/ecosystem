@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:warp_anchor",
+  "display": {
+    "icon": { "id": "minecraft:compass" },
+    "title": { "text": "Пара" },
+    "description": { "text": "Второй лодстоун в 16–5000 блоках — пара звенит, компас сгорел. Он знал, на что шёл." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:root",
+  "display": {
+    "icon": { "id": "minecraft:fletching_table" },
+    "title": { "text": "Лучник" },
+    "description": { "text": "Стол лучника собирает стрелы из оперения, древка и наконечника. Три слота, один результат, много вариантов." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

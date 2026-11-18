@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:root",
+  "display": {
+    "icon": { "id": "minecraft:cauldron" },
+    "title": { "text": "Стирка" },
+    "description": { "text": "Водяной котёл работает как химчистка: цветная вещь становится белой, сама вещь остаётся." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

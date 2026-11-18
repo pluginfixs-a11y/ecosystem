@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:mob_hike",
+  "display": {
+    "icon": { "id": "minecraft:spyglass" },
+    "title": { "text": "Глушь" },
+    "description": { "text": "За 7500 скелеты стреляют эффектными стрелами II уровня. Отрава — это комплимент." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

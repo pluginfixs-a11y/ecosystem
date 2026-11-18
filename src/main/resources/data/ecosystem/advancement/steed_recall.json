@@ -1,0 +1,11 @@
+{
+  "parent": "ecosystem:steed_ride",
+  "display": {
+    "icon": { "id": "minecraft:lead" },
+    "title": { "text": "Свистни" },
+    "description": { "text": "Конь придёт на рог из любого измерения за две секунды. Долго только чанки грузятся." },
+    "frame": "goal"
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } },
+  "rewards": { "experience": 20 }
+}

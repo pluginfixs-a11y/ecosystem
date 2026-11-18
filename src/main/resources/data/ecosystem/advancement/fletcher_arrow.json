@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:fletcher_table",
+  "display": {
+    "icon": { "id": "minecraft:arrow" },
+    "title": { "text": "Своя стрела" },
+    "description": { "text": "Своя стрела: урон, дальность и пробивание живут в компонентах. Ваниль такое не рисует." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:warp_anchor",
+  "display": {
+    "icon": { "id": "minecraft:ender_pearl" },
+    "title": { "text": "Прыжок" },
+    "description": { "text": "Пять секунд на лодстоуне — и ты уже там, с дебаффами по расстоянию." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

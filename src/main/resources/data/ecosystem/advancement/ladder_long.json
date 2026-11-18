@@ -1,0 +1,11 @@
+{
+  "parent": "ecosystem:ladder",
+  "display": {
+    "icon": { "id": "minecraft:scaffolding" },
+    "title": { "text": "Тарзан" },
+    "description": { "text": "Шестнадцать метров лестниц на одном якоре. Якорь, правда, всего один." },
+    "frame": "goal"
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } },
+  "rewards": { "experience": 20 }
+}

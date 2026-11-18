@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:ghost_hide",
+  "display": {
+    "icon": { "id": "minecraft:oak_sign" },
+    "title": { "text": "Надпись" },
+    "description": { "text": "Табличка с мембраной: доска исчезает, текст висит в воздухе. Клуб невидимок открыт." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

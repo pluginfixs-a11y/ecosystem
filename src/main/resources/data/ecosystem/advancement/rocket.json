@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:root",
+  "display": {
+    "icon": { "id": "minecraft:crossbow" },
+    "title": { "text": "ПВО" },
+    "description": { "text": "Фейерверк с пиротехникой из арбалета сам находит летающую цель. Вопрос только в количестве звёздочек." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

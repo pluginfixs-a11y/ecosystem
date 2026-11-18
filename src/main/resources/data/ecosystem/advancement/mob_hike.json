@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:root",
+  "display": {
+    "icon": { "id": "minecraft:zombie_head" },
+    "title": { "text": "Дальний поход" },
+    "description": { "text": "За 3000 блоков от центра мобы крепче, к 10000 — HP ×2.5, урон ×2, дроп ×3." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

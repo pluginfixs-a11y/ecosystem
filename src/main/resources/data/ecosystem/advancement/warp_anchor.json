@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:root",
+  "display": {
+    "icon": { "id": "minecraft:recovery_compass" },
+    "title": { "text": "Якорь" },
+    "description": { "text": "Компас восстановления в лодстоуне — половина пары. Компас блестит от гордости, пока пара не собрана." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

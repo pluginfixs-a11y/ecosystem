@@ -1,0 +1,11 @@
+{
+  "parent": "ecosystem:rocket",
+  "display": {
+    "icon": { "id": "minecraft:fire_charge" },
+    "title": { "text": "В яблочко" },
+    "description": { "text": "Самонаводящаяся ракета догнала. Гаст не верит, но добивать придётся." },
+    "frame": "goal"
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } },
+  "rewards": { "experience": 20 }
+}

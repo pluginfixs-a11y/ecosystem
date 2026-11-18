@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:field",
+  "display": {
+    "icon": { "id": "minecraft:wheat_seeds" },
+    "title": { "text": "Сеятель" },
+    "description": { "text": "Мотыга ещё и сеет: клик по пустой грядке — и поле засеяно тем, что нашлось в кармане." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

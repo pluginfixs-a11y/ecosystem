@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:rocket",
+  "display": {
+    "icon": { "id": "minecraft:firework_rocket" },
+    "title": { "text": "Захват" },
+    "description": { "text": "Ракета взяла цель: гаст, векс, фантом, визер, дракон и прочая летающая мелочь. Ты уже не нужен." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

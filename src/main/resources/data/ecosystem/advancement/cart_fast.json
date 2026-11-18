@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:cart",
+  "display": {
+    "icon": { "id": "minecraft:powered_rail" },
+    "title": { "text": "Газ в пол" },
+    "description": { "text": "35 б/с — и рельсы можно класть как попало: подпитка нужна только на поворотах." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}
