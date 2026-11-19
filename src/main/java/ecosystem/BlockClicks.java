@@ -88,7 +88,7 @@ public final class BlockClicks {
 			if (player.isSecondaryUseActive() && stack.getItem() instanceof BlockItem) {
 				return;
 			}
-			Awards.award(player, Awards.FLETCHER_TABLE);
+			PENDING.add(new Snap(Kind.FLETCHER, player, level, hand, stack.getItem(), pos, null, null));
 			return;
 		}
 
@@ -178,7 +178,7 @@ public final class BlockClicks {
 		PENDING.clear();
 	}
 
-	private enum Kind { FIELD, LADDER, CAULDRON, SIGN, MARKER }
+	private enum Kind { FIELD, LADDER, CAULDRON, SIGN, MARKER, FLETCHER }
 
 	private static final class Snap {
 		final Kind kind;
@@ -211,6 +211,7 @@ public final class BlockClicks {
 				case CAULDRON -> cauldron();
 				case SIGN -> sign();
 				case MARKER -> marker();
+				case FLETCHER -> fletcher();
 			}
 		}
 
@@ -225,6 +226,17 @@ public final class BlockClicks {
 		private void marker() {
 			if (level.getBlockState(pos).getBlock() instanceof SignBlock) {
 				Awards.award(player, Awards.GHOST_TEXT_BACK);
+			}
+		}
+
+		/**
+		 * Стол лучника: пакет приходит раньше ванильной проверки дистанции, а чужой обработчик может
+		 * съесть клик (ghostframe на маркере рядом со столом) — поэтому судим не по клику, а по меню,
+		 * которое реально открылось следующим тиком.
+		 */
+		private void fletcher() {
+			if (player.containerMenu != player.inventoryMenu) {
+				Awards.award(player, Awards.FLETCHER_TABLE);
 			}
 		}
 
