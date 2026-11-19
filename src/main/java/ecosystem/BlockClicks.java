@@ -8,6 +8,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -79,9 +80,12 @@ public final class BlockClicks {
 		BlockState state = level.getBlockState(pos);
 
 		if (state.is(Blocks.FLETCHING_TABLE)) {
-			// Те же условия, что у самого fletcher: главная рука, без приседа, не наблюдатель.
-			if (!Ecosystem.FLETCHER_LOADED || hand != InteractionHand.MAIN_HAND
-					|| player.isSecondaryUseActive() || player.isSpectator()) {
+			// Те же условия, что у fletcher 1.2: главная рука, не наблюдатель; шифт не мешает,
+			// если в руке не блок (тогда мод отдаёт клик ванили на установку).
+			if (!Ecosystem.FLETCHER_LOADED || hand != InteractionHand.MAIN_HAND || player.isSpectator()) {
+				return;
+			}
+			if (player.isSecondaryUseActive() && stack.getItem() instanceof BlockItem) {
 				return;
 			}
 			Awards.award(player, Awards.FLETCHER_TABLE);

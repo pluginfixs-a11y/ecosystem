@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:bow" },
     "title": { "text": "Снайпер" },
-    "description": { "text": "Убить стрелой со стола лучника. Аргумент в пользу ручной сборки." },
+    "description": { "text": "Убить стрелой со стола лучника — хоть огненной, хоть светящейся. Аргумент в пользу ручной сборки." },
     "frame": "goal"
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } },
