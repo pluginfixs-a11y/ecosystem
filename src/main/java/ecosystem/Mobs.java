@@ -25,8 +25,8 @@ final class Mobs {
 
 	/** Радиус, с которого MobScaler начинает усиливать мобов. */
 	private static final double HIKE = 3000.0;
-	/** Отсюда у скелетов эффектные стрелы. */
-	private static final double DEEP = 7500.0;
+	/** Половина кривой 2.2.0 (доля 0.55): мобы уже заметно крепче, фантомы приходят стаями. */
+	private static final double DEEP = 12000.0;
 
 	static void tick(MinecraftServer server) {
 		if (server.getTickCount() % 10 != 0) {

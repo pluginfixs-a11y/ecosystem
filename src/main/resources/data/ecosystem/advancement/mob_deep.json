@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:spyglass" },
     "title": { "text": "Глушь" },
-    "description": { "text": "За 7500 скелеты стреляют эффектными стрелами II уровня. Отрава — это комплимент." }
+    "description": { "text": "12 000 блоков от центра: мобы ×1.8 по здоровью, урон ×1.5, фантомы приходят стаей до десяти — даже к тому, кто спал." }
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } }
 }
