@@ -80,7 +80,7 @@
 
 ## Проверено
 
-- `gradlew build` — jar `build/libs/ecosystem-1.1.1.jar`.
+- `gradlew build` — jar `build/libs/ecosystem-1.1.2.jar`.
 - Копия сервера (`D:\Temp\serv-eco`, плоский мир, полный набор модов + `ghostframe 1.3.0`, `fletcher 1.2.2`,
   `brine 1.0.0`): мод грузится, миксины применяются, `Loaded 1797 advancements` (+5 нод рыбалки), самопроверка
   **`Ecosystem: вкладка цела — нод: 42, веток «Свояка»: 12`**, ошибок разбора и валидации нет.
