@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:root",
+  "display": {
+    "icon": { "id": "minecraft:fishing_rod" },
+    "title": { "text": "Подсечка" },
+    "description": { "text": "Поплавок ушёл под воду — клик. Дальше рыба сопротивляется: бей в каждый нырок и не дёргай в паузах. Три промаха — и она уйдёт." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

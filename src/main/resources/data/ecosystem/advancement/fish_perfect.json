@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:fish",
+  "display": {
+    "icon": { "id": "minecraft:amethyst_shard" },
+    "title": { "text": "Чистый бой" },
+    "description": { "text": "Ни одного промаха. Чистый бой иногда приносит второй улов с того же заброса — и звенит аметистом." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

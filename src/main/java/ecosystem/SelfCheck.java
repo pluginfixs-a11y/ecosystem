@@ -53,7 +53,7 @@ final class SelfCheck {
 		}
 
 		if (problems == null) {
-			Ecosystem.LOGGER.info("Ecosystem: {} достижений на месте, {} веток «Свояка» в порядке",
+			Ecosystem.LOGGER.info("Ecosystem: вкладка цела — нод: {}, веток «Свояка»: {}",
 					Awards.IDS.length, Awards.BRANCHES.length);
 		} else {
 			Ecosystem.LOGGER.warn("Ecosystem: не загружено {} из {}, критерий не тот у {}, битых веток {}:{}",

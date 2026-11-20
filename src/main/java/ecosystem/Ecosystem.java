@@ -33,6 +33,8 @@ public class Ecosystem implements ModInitializer {
 	public static final boolean DEBUG = Boolean.getBoolean("ecosystem.debug");
 	/** Стол лучника — обычный блок: без мода не на что вешать достижение. */
 	public static final boolean FLETCHER_LOADED = FabricLoader.getInstance().isModLoaded("fletcher");
+	/** Ветка рыбалки живёт на тегах brine: без него её ноды не выдаются, а «Свояк» её не ждёт. */
+	public static final boolean BRINE_LOADED = FabricLoader.getInstance().isModLoaded("brine");
 
 	@Override
 	public void onInitialize() {
@@ -68,6 +70,7 @@ public class Ecosystem implements ModInitializer {
 			Rockets.forget(player);
 		});
 
-		LOGGER.info("Ecosystem: вкладка достижений активна (debug={}, fletcher={})", DEBUG, FLETCHER_LOADED);
+		LOGGER.info("Ecosystem: вкладка достижений активна (debug={}, fletcher={}, brine={})", DEBUG, FLETCHER_LOADED,
+				BRINE_LOADED);
 	}
 }

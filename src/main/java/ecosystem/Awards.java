@@ -26,6 +26,7 @@ public final class Awards {
 	public static final String MOB_HIKE = "mob_hike";
 	public static final String GHOST_HIDE = "ghost_hide";
 	public static final String FLETCHER_TABLE = "fletcher_table";
+	public static final String FISH = "fish";
 
 	// Остальные ноды.
 	public static final String FIELD_TILL = "field_till";
@@ -52,11 +53,15 @@ public final class Awards {
 	public static final String GHOST_TEXT_BACK = "ghost_text_back";
 	public static final String FLETCHER_ARROW = "fletcher_arrow";
 	public static final String FLETCHER_KILL = "fletcher_kill";
+	public static final String FISH_PERFECT = "fish_perfect";
+	public static final String FISH_DEEP = "fish_deep";
+	public static final String FISH_LIVE = "fish_live";
+	public static final String FISH_TROPHY = "fish_trophy";
 	public static final String ALL = "all";
 
 	static final String[] BRANCHES = {
 			FIELD, CAULDRON, LADDER, CART, ROCKET, WARP_ANCHOR, ENCHANT, STEED_RIDE, MOB_HIKE, GHOST_HIDE,
-			FLETCHER_TABLE
+			FLETCHER_TABLE, FISH
 	};
 
 	/** Полный список файлов {@code data/ecosystem/advancement/*.json} — для самопроверки на старте. */
@@ -73,6 +78,7 @@ public final class Awards {
 			MOB_HIKE, MOB_DEEP, MOB_SCALED, MOB_ARROW,
 			GHOST_HIDE, GHOST_SHOW, GHOST_SIGN, GHOST_TEXT_BACK,
 			FLETCHER_TABLE, FLETCHER_ARROW, FLETCHER_KILL,
+			FISH, FISH_PERFECT, FISH_DEEP, FISH_LIVE, FISH_TROPHY,
 			ALL
 	};
 
@@ -129,8 +135,11 @@ public final class Awards {
 			return;
 		}
 		for (String branch : BRANCHES) {
-			// Без мода стол лучника не существует: его ветку не ждём, иначе «Свояк» недостижим.
+			// Без мода ветки не существует: её не ждём, иначе «Свояк» недостижим.
 			if (FLETCHER_TABLE.equals(branch) && !Ecosystem.FLETCHER_LOADED) {
+				continue;
+			}
+			if (FISH.equals(branch) && !Ecosystem.BRINE_LOADED) {
 				continue;
 			}
 			AdvancementHolder holder = holder(server, branch);

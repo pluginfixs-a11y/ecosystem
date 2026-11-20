@@ -1,0 +1,10 @@
+{
+  "parent": "ecosystem:fish",
+  "display": {
+    "icon": { "id": "minecraft:pufferfish_bucket" },
+    "title": { "text": "Трофей" },
+    "description": { "text": "Живая рыба от 1.6×. Таких по умолчанию около десятой части живых уловов — и в ведре сразу видно, кто именно." },
+    "frame": "goal"
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

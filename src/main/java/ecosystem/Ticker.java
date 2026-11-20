@@ -16,6 +16,7 @@ final class Ticker {
 		Steeds.tick();
 		Mobs.tick(server);
 		Fletchers.tick(server);
+		Fishing.tick(server);
 	}
 
 	static void clear() {
