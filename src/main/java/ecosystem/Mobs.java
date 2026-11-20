@@ -6,6 +6,10 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.monster.skeleton.AbstractSkeleton;
+import net.minecraft.world.entity.monster.skeleton.Bogged;
+import net.minecraft.world.entity.monster.skeleton.Parched;
+import net.minecraft.world.entity.monster.skeleton.Stray;
+import net.minecraft.world.entity.monster.skeleton.WitherSkeleton;
 import net.minecraft.world.entity.projectile.arrow.AbstractArrow;
 import net.minecraft.world.level.Level;
 
@@ -27,6 +31,11 @@ final class Mobs {
 	private static final double HIKE = 3000.0;
 	/** Половина кривой 2.2.0 (доля 0.55): мобы уже заметно крепче, фантомы приходят стаями. */
 	private static final double DEEP = 12000.0;
+	/** Скелеты этих видов стреляют эффектными стрелами сами, mobscaler их не трогает. */
+	private static boolean nativeTipped(AbstractSkeleton skeleton) {
+		return skeleton instanceof Stray || skeleton instanceof Bogged || skeleton instanceof Parched
+				|| skeleton instanceof WitherSkeleton;
+	}
 
 	static void tick(MinecraftServer server) {
 		if (server.getTickCount() % 10 != 0) {
@@ -70,6 +79,10 @@ final class Mobs {
 			return;
 		}
 		if (!(arrow.getOwner() instanceof AbstractSkeleton skeleton)) {
+			return;
+		}
+		// Те же виды, что пропускает сам mobscaler: у них эффект ванильный, а не от усиления.
+		if (nativeTipped(skeleton)) {
 			return;
 		}
 		for (String tag : skeleton.entityTags()) {

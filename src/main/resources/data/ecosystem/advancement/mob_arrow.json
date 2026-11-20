@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:spectral_arrow" },
     "title": { "text": "Сюрприз" },
-    "description": { "text": "Стрела с эффектом от усиленного скелета: такие летят уже с 3000, с 13 700 — II уровня. Отрава — это комплимент." },
+    "description": { "text": "Стрела с эффектом от усиленного скелета: сразу за 3000 такие уже летят, а после 13 700 — II уровня. Сюрприз — это комплимент." },
     "frame": "goal"
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } },
