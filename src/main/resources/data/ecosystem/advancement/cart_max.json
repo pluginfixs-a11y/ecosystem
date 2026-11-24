@@ -1,5 +1,5 @@
 {
-  "parent": "ecosystem:cart",
+  "parent": "ecosystem:cart_fast",
   "display": {
     "icon": { "id": "minecraft:rail" },
     "title": { "text": "Сороковка" },

@@ -1,5 +1,5 @@
 {
-  "parent": "ecosystem:rocket",
+  "parent": "ecosystem:rocket_lock",
   "display": {
     "icon": { "id": "minecraft:fire_charge" },
     "title": { "text": "В яблочко" },

@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:fish",
+  "display": {
+    "icon": { "id": "minecraft:drowned_spawn_egg" },
+    "title": { "text": "Крупная дичь" },
+    "description": { "text": "С крючка вместо рыбы вылезла живая тварь: из тёплой и ледяной воды страж, из прочей — утопленник. Улов засчитан, рыбы нет." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

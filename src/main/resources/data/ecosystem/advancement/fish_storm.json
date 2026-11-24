@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:fish",
+  "display": {
+    "icon": { "id": "minecraft:lightning_rod" },
+    "title": { "text": "Гроза" },
+    "description": { "text": "В грозу ждать поклёвку меньше всего: шторм режет ожидание сильнее дождя, а клюёт та же рыба." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

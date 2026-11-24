@@ -1,5 +1,5 @@
 {
-  "parent": "ecosystem:steed_ride",
+  "parent": "ecosystem:steed_horn",
   "display": {
     "icon": { "id": "minecraft:lead" },
     "title": { "text": "Свистни" },

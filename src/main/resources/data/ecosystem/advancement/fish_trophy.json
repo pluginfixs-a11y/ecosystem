@@ -1,5 +1,5 @@
 {
-  "parent": "ecosystem:fish",
+  "parent": "ecosystem:fish_live",
   "display": {
     "icon": { "id": "minecraft:pufferfish_bucket" },
     "title": { "text": "Трофей" },

@@ -9,6 +9,7 @@ import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.BundleItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -88,7 +89,8 @@ public final class BlockClicks {
 			if (player.isSecondaryUseActive() && stack.getItem() instanceof BlockItem) {
 				return;
 			}
-			PENDING.add(new Snap(Kind.FLETCHER, player, level, hand, stack.getItem(), pos, null, null));
+			PENDING.add(new Snap(Kind.FLETCHER, player, level, hand, stack.getItem(), pos, null, null,
+					Fletchers.isQuiver(stack)));
 			return;
 		}
 
@@ -189,10 +191,16 @@ public final class BlockClicks {
 		final BlockPos pos;
 		final BlockPos target;
 		final BlockState[] before;
+		final boolean quiverInHand;
 		final int born;
 
 		Snap(Kind kind, ServerPlayer player, ServerLevel level, InteractionHand hand, Item item,
 		     BlockPos pos, BlockPos target, BlockState[] before) {
+			this(kind, player, level, hand, item, pos, target, before, false);
+		}
+
+		Snap(Kind kind, ServerPlayer player, ServerLevel level, InteractionHand hand, Item item,
+		     BlockPos pos, BlockPos target, BlockState[] before, boolean quiverInHand) {
 			this.kind = kind;
 			this.player = player;
 			this.level = level;
@@ -201,6 +209,7 @@ public final class BlockClicks {
 			this.pos = pos;
 			this.target = target;
 			this.before = before;
+			this.quiverInHand = quiverInHand;
 			this.born = level.getServer().getTickCount();
 		}
 
@@ -237,6 +246,11 @@ public final class BlockClicks {
 		private void fletcher() {
 			if (player.containerMenu != player.inventoryMenu) {
 				Awards.award(player, Awards.FLETCHER_TABLE);
+			}
+			// Пустой мешок стол превращает в колчан на месте — прямо в руке.
+			// Колчан в руке при повторном клике по столу ничего не превращает: открывается его экран.
+			if (!quiverInHand && item instanceof BundleItem && Fletchers.isQuiver(player.getItemInHand(hand))) {
+				Awards.award(player, Awards.FLETCHER_QUIVER);
 			}
 		}
 

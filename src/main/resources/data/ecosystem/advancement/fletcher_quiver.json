@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:fletcher_table",
+  "display": {
+    "icon": { "id": "minecraft:bundle" },
+    "title": { "text": "Колчан" },
+    "description": { "text": "Пустой мешок на столе лучника становится колчаном: пять слотов, ПКМ выбирает активную стрелу, и лук в хотбаре берёт её оттуда." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

@@ -27,6 +27,10 @@ final class Fishing {
 	static final String LIVE = "brine:live";
 	/** Живая рыба 1.6× и крупнее. */
 	static final String TROPHY = "brine:trophy";
+	/** Улов в грозу. */
+	static final String STORM = "brine:storm";
+	/** С крючка вылезла живая тварь — она и была уловом. */
+	static final String BEAST = "brine:beast";
 
 	private Fishing() {
 	}
@@ -50,6 +54,12 @@ final class Fishing {
 			}
 			if (player.entityTags().contains(TROPHY)) {
 				Awards.award(player, Awards.FISH_TROPHY);
+			}
+			if (player.entityTags().contains(STORM)) {
+				Awards.award(player, Awards.FISH_STORM);
+			}
+			if (player.entityTags().contains(BEAST)) {
+				Awards.award(player, Awards.FISH_BEAST);
 			}
 		}
 	}

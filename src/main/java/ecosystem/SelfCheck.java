@@ -45,18 +45,38 @@ final class SelfCheck {
 		}
 
 		int badBranch = 0;
-		for (String branch : Awards.BRANCHES) {
+		if (Awards.BRANCH_MODS.length != Awards.BRANCHES.length) {
+			badBranch++;
+			problems = append(problems, "BRANCH_MODS(" + Awards.BRANCH_MODS.length + ")!=BRANCHES("
+					+ Awards.BRANCHES.length + ")");
+		}
+		for (int i = 0; i < Awards.BRANCHES.length; i++) {
+			String branch = Awards.BRANCHES[i];
+			if (i < Awards.BRANCH_MODS.length && !branch.equals(Awards.BRANCH_MODS[i][0])) {
+				badBranch++;
+				problems = append(problems, branch + "(не та пара)");
+			}
 			if (!known.contains(branch) || holder(server, branch) == null) {
 				badBranch++;
 				problems = append(problems, branch + "(ветка)");
 			}
 		}
 
+		// Чужая нода «Свояка»: без неё капстоун молча недостижим, когда anomaly стоит на сервере.
+		boolean foreign = false;
+		if (Ecosystem.ANOMALY_LOADED) {
+			foreign = server.getAdvancements().get(
+					Identifier.fromNamespaceAndPath(Awards.ANOMALY_NS, Awards.ANOMALY_PATH)) != null;
+			if (!foreign) {
+				problems = append(problems, Awards.ANOMALY_NS + ":" + Awards.ANOMALY_PATH + "(нет)");
+			}
+		}
+
 		if (problems == null) {
-			Ecosystem.LOGGER.info("Ecosystem: вкладка цела — нод: {}, веток «Свояка»: {}",
-					Awards.IDS.length, Awards.BRANCHES.length);
+			Ecosystem.LOGGER.info("Ecosystem: вкладка цела — нод: {}, веток «Свояка»: {}{}", Awards.IDS.length,
+					Awards.BRANCHES.length, foreign ? ", +" + Awards.ANOMALY_NS + ":" + Awards.ANOMALY_PATH : "");
 		} else {
-			Ecosystem.LOGGER.warn("Ecosystem: не загружено {} из {}, критерий не тот у {}, битых веток {}:{}",
+			Ecosystem.LOGGER.warn("Ecosystem: не загружено {} из {}, критерий не тот у {}, битых веток {}, проблем:{}",
 					missing, Awards.IDS.length, badCriterion, badBranch, problems);
 		}
 	}

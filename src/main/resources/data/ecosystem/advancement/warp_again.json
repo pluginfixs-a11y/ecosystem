@@ -1,5 +1,5 @@
 {
-  "parent": "ecosystem:warp_anchor",
+  "parent": "ecosystem:warp_ride",
   "display": {
     "icon": { "id": "minecraft:map" },
     "title": { "text": "Туда и обратно" },

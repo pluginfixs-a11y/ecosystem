@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.entity.event.v1.ServerPlayerEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerEntityEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerLifecycleEvents;
 import net.fabricmc.fabric.api.event.lifecycle.v1.ServerTickEvents;
+import net.fabricmc.fabric.api.event.player.PlayerBlockBreakEvents;
 import net.fabricmc.fabric.api.event.player.UseEntityCallback;
 import net.fabricmc.fabric.api.event.player.UseItemCallback;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayConnectionEvents;
@@ -35,6 +36,13 @@ public class Ecosystem implements ModInitializer {
 	public static final boolean FLETCHER_LOADED = FabricLoader.getInstance().isModLoaded("fletcher");
 	/** Ветка рыбалки живёт на тегах brine: без него её ноды не выдаются, а «Свояк» её не ждёт. */
 	public static final boolean BRINE_LOADED = FabricLoader.getInstance().isModLoaded("brine");
+	/** Аномалия держит своё дерево: «Свояк» ждёт её ноду, но без мода не ждёт. */
+	public static final boolean ANOMALY_LOADED = FabricLoader.getInstance().isModLoaded("anomaly");
+
+	/** Загружен ли мод набора: «Свояк» ждёт только те ветки, чьи моды стоят на сервере. */
+	public static boolean loaded(String modId) {
+		return FabricLoader.getInstance().isModLoaded(modId);
+	}
 
 	@Override
 	public void onInitialize() {
@@ -52,7 +60,12 @@ public class Ecosystem implements ModInitializer {
 		ServerLivingEntityEvents.AFTER_DAMAGE.register(Rockets::onDamage);
 		ServerLivingEntityEvents.AFTER_DAMAGE.register(Mobs::onDamage);
 		ServerEntityEvents.ENTITY_LOAD.register(Rockets::onLoad);
+		ServerEntityEvents.ENTITY_LOAD.register((entity, level) -> Fletchers.onLoad(entity));
 		ServerEntityEvents.ENTITY_UNLOAD.register(Rockets::onUnload);
+		ServerEntityEvents.ENTITY_UNLOAD.register((entity, level) -> Fletchers.onUnload(entity));
+		// Железная стрела ломает блок и уничтожается; событие ломания приходит и на кирку,
+		// поэтому внутри проверяется, что стрела именно летела.
+		PlayerBlockBreakEvents.AFTER.register(Fletchers::onBlockBreak);
 
 		UseEntityCallback.EVENT.register(Steeds::onUseEntity);
 		UseItemCallback.EVENT.register(Steeds::onUseItem);
@@ -70,7 +83,7 @@ public class Ecosystem implements ModInitializer {
 			Rockets.forget(player);
 		});
 
-		LOGGER.info("Ecosystem: вкладка достижений активна (debug={}, fletcher={}, brine={})", DEBUG, FLETCHER_LOADED,
-				BRINE_LOADED);
+		LOGGER.info("Ecosystem: вкладка достижений активна (debug={}, fletcher={}, brine={}, anomaly={})", DEBUG,
+				FLETCHER_LOADED, BRINE_LOADED, ANOMALY_LOADED);
 	}
 }

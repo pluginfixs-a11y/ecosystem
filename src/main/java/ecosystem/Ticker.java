@@ -26,5 +26,6 @@ final class Ticker {
 		Rockets.clear();
 		Warps.clear();
 		Steeds.clear();
+		Fletchers.clear();
 	}
 }

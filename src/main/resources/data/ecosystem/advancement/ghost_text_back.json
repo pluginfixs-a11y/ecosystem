@@ -1,5 +1,5 @@
 {
-  "parent": "ecosystem:ghost_hide",
+  "parent": "ecosystem:ghost_sign",
   "display": {
     "icon": { "id": "minecraft:name_tag" },
     "title": { "text": "Возврат" },

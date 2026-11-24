@@ -1,0 +1,11 @@
+{
+  "parent": "ecosystem:fletcher_kill",
+  "display": {
+    "icon": { "id": "minecraft:gunpowder" },
+    "title": { "text": "Порох" },
+    "description": { "text": "Стрела с порохом взрывается на первом попадании: 0.8 силы, урон вдвое, блоки ломаются всегда. Убей ею кого-нибудь — стрела всё равно гибнет." },
+    "frame": "challenge"
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } },
+  "rewards": { "experience": 50 }
+}

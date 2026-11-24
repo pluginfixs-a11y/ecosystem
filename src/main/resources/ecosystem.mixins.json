@@ -4,6 +4,7 @@
   "package": "ecosystem.mixin",
   "compatibilityLevel": "JAVA_25",
   "mixins": [
+    "AbstractArrowAccessor",
     "PlayerAdvancementsMixin",
     "ServerGamePacketListenerImplMixin"
   ],

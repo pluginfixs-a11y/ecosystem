@@ -1,5 +1,5 @@
 {
-  "parent": "ecosystem:fletcher_table",
+  "parent": "ecosystem:fletcher_arrow",
   "display": {
     "icon": { "id": "minecraft:bow" },
     "title": { "text": "Снайпер" },

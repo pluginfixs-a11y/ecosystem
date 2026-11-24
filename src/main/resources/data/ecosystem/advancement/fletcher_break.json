@@ -1,0 +1,9 @@
+{
+  "parent": "ecosystem:fletcher_arrow",
+  "display": {
+    "icon": { "id": "minecraft:iron_ingot" },
+    "title": { "text": "Взлом" },
+    "description": { "text": "Железный наконечник ломает камень и руду без кирки — ценой самой стрелы. Обсидиан, незерит и бедрок ему не по зубам." }
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } }
+}

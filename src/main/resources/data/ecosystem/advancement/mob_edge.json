@@ -1,0 +1,11 @@
+{
+  "parent": "ecosystem:mob_deep",
+  "display": {
+    "icon": { "id": "minecraft:barrier" },
+    "title": { "text": "Край света" },
+    "description": { "text": "Километр до границы мира — в любом измерении, граница одна на все три. Дальше не пускает, а усиление мобов осталось в Верхнем мире." },
+    "frame": "goal"
+  },
+  "criteria": { "code": { "trigger": "minecraft:impossible" } },
+  "rewards": { "experience": 20 }
+}
