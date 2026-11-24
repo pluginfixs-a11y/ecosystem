@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:fire_charge" },
     "title": { "text": "В яблочко" },
-    "description": { "text": "Самонаводящаяся ракета догнала. Гаст не верит, но добивать придётся." },
+    "description": { "text": "Догони ракетой живую цель. Гаст уже всё понял, добивать всё равно тебе." },
     "frame": "goal"
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } },

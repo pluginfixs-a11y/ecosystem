@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:powered_rail" },
     "title": { "text": "Газ в пол" },
-    "description": { "text": "35 б/с — и рельсы можно класть как попало: подпитка нужна только на поворотах." }
+    "description": { "text": "Разгони вагонетку до 35 б/с. Тормоза придумали пассажиры." }
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } }
 }

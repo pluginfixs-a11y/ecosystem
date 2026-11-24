@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:scaffolding" },
     "title": { "text": "Тарзан" },
-    "description": { "text": "Шестнадцать метров лестниц на одном якоре. Якорь, правда, всего один." },
+    "description": { "text": "Спусти по цепочке шестнадцать метров. Якорь один, тормозов нет." },
     "frame": "goal"
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } },

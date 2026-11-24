@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:rail" },
     "title": { "text": "Сороковка" },
-    "description": { "text": "38 б/с десять секунд подряд. Дальше — только поезд в стену." },
+    "description": { "text": "38 б/с десять секунд подряд. Пора выбирать, во что верить." },
     "frame": "challenge"
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } },

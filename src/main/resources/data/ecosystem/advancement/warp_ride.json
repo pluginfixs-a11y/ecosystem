@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:ender_pearl" },
     "title": { "text": "Прыжок" },
-    "description": { "text": "Пять секунд на лодстоуне — и ты уже там, с дебаффами по расстоянию." }
+    "description": { "text": "Постой на лодстоуне пять секунд и уйди к паре. Дебаффы зависят от расстояния." }
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } }
 }

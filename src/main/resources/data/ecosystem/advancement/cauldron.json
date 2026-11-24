@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:cauldron" },
     "title": { "text": "Стирка" },
-    "description": { "text": "Водяной котёл работает как химчистка: цветная вещь становится белой, сама вещь остаётся." }
+    "description": { "text": "Прополощи цветную вещь в водяном котле. Краска сойдёт, вещь останется." }
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } }
 }

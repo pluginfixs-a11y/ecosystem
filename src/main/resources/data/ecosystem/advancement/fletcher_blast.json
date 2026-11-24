@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:gunpowder" },
     "title": { "text": "Порох" },
-    "description": { "text": "Стрела с порохом взрывается на первом попадании: 0.8 силы, урон вдвое, блоки ломаются всегда. Убей ею кого-нибудь — стрела всё равно гибнет." },
+    "description": { "text": "Добавь порох, выстрели и убей взрывом. Стрела тоже не выживет." },
     "frame": "challenge"
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } },

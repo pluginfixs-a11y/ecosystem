@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:lead" },
     "title": { "text": "Свистни" },
-    "description": { "text": "Конь придёт на рог из любого измерения за две секунды. Долго только чанки грузятся." },
+    "description": { "text": "Дунь в рог — конь придёт из любого измерения. Чанки, как всегда, подождут." },
     "frame": "goal"
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } },

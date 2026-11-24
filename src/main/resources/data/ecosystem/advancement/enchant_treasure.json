@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:enchanted_book" },
     "title": { "text": "Сокровище" },
-    "description": { "text": "Починка, Проворство и Ледоход теперь выпадают на столе. Сокровища перестали быть сокровищами." },
+    "description": { "text": "Достань со стола Починку, Проворство или Ледоход. Сокровища перестали быть сокровищами." },
     "frame": "goal"
   },
   "criteria": { "mending_stored_enchantments": { "trigger": "minecraft:enchanted_item", "conditions": { "item": { "predicates": { "minecraft:stored_enchantments": [ { "enchantments": "minecraft:mending", "levels": { "min": 1 } } ] } } } }, "mending_enchantments": { "trigger": "minecraft:enchanted_item", "conditions": { "item": { "predicates": { "minecraft:enchantments": [ { "enchantments": "minecraft:mending", "levels": { "min": 1 } } ] } } } }, "swift_sneak_stored_enchantments": { "trigger": "minecraft:enchanted_item", "conditions": { "item": { "predicates": { "minecraft:stored_enchantments": [ { "enchantments": "minecraft:swift_sneak", "levels": { "min": 1 } } ] } } } }, "swift_sneak_enchantments": { "trigger": "minecraft:enchanted_item", "conditions": { "item": { "predicates": { "minecraft:enchantments": [ { "enchantments": "minecraft:swift_sneak", "levels": { "min": 1 } } ] } } } }, "frost_walker_stored_enchantments": { "trigger": "minecraft:enchanted_item", "conditions": { "item": { "predicates": { "minecraft:stored_enchantments": [ { "enchantments": "minecraft:frost_walker", "levels": { "min": 1 } } ] } } } }, "frost_walker_enchantments": { "trigger": "minecraft:enchanted_item", "conditions": { "item": { "predicates": { "minecraft:enchantments": [ { "enchantments": "minecraft:frost_walker", "levels": { "min": 1 } } ] } } } } },

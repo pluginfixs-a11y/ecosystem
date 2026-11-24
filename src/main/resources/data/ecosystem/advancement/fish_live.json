@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:cod_bucket" },
     "title": { "text": "Живая рыба" },
-    "description": { "text": "С рыбалки иногда приходит ведро с живой рыбой: выпусти — и она будет того же размера, что поймал." }
+    "description": { "text": "Вытащи рыбу живьём, в ведре. Размер — ровно тот, что поймал." }
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } }
 }

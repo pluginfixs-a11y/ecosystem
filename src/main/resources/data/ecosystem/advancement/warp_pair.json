@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:compass" },
     "title": { "text": "Пара" },
-    "description": { "text": "Второй лодстоун в 16–5000 блоках — пара звенит, компас сгорел. Он знал, на что шёл." }
+    "description": { "text": "Свяжи два лодстоуна в 16–5000 блоках. Компас сгорит, но дело сделает." }
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } }
 }

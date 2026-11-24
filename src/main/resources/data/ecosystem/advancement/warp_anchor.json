@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:recovery_compass" },
     "title": { "text": "Якорь" },
-    "description": { "text": "Компас восстановления в лодстоуне — половина пары. Компас блестит от гордости, пока пара не собрана." }
+    "description": { "text": "Положи компас восстановления в лодстоун. Он заблестит — это половина пары." }
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } }
 }

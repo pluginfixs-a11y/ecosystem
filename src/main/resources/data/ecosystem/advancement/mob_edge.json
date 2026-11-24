@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:barrier" },
     "title": { "text": "Край света" },
-    "description": { "text": "Километр до границы мира — в любом измерении, граница одна на все три. Дальше не пускает, а усиление мобов осталось в Верхнем мире." },
+    "description": { "text": "Пройди сквозь опасные земли и найди, где кончается мир." },
     "frame": "goal"
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } },

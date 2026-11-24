@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:item_frame" },
     "title": { "text": "Призрак" },
-    "description": { "text": "Рамка с мембраной фантома: рамки нет, предмет висит, менять его можно и в невидимой." }
+    "description": { "text": "Проведи мембраной по рамке: рамки нет, предмет висит. Соседи не заметят." }
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } }
 }

@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:firework_rocket" },
     "title": { "text": "Захват" },
-    "description": { "text": "Ракета взяла цель: гаст, векс, фантом, визер, дракон и прочая летающая мелочь. Ты уже не нужен." }
+    "description": { "text": "Дождись, пока ракета возьмёт цель: гаста, векса или дракона. Дальше ты не нужен." }
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } }
 }

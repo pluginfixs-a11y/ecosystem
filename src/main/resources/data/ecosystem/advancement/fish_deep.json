@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:glow_ink_sac" },
     "title": { "text": "Под землёй клюёт" },
-    "description": { "text": "В пещерной воде (и ниже y=32) своя добыча: аметист, светящиеся чернила, аксолотль в ведре." }
+    "description": { "text": "Порыбачь в пещерной воде: там клюют аметист, светящиеся чернила и аксолотль." }
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } }
 }

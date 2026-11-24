@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:iron_sword" },
     "title": { "text": "С путей долой" },
-    "description": { "text": "Сбить моба вагонеткой на ходу. Животных жалко, но научный интерес сильнее." }
+    "description": { "text": "Сбей моба вагонеткой на ходу. Он был не в курсе расписания." }
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } }
 }

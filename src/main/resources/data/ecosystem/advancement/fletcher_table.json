@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:fletching_table" },
     "title": { "text": "Лучник" },
-    "description": { "text": "Стол лучника собирает стрелы из оперения, древка и наконечника: у каждого материала свой урон, дальность и пробивание." }
+    "description": { "text": "Открой стол лучника: оперение, древко, наконечник — и стрела с уроном и дальностью." }
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } }
 }

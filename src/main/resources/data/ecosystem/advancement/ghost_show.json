@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:glow_item_frame" },
     "title": { "text": "Явление" },
-    "description": { "text": "Рамка вернулась. Никто и не заметил, что её не было." }
+    "description": { "text": "Верни рамку на место. Никто так и не понял, что её не было." }
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } }
 }

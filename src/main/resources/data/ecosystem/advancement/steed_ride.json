@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:golden_carrot" },
     "title": { "text": "Рысак" },
-    "description": { "text": "Лошадь на треть быстрее и прыгает выше. Ваниль просто не знала о спортивных добавках." }
+    "description": { "text": "Сядь на лошадь: она на треть быстрее и прыгает выше. Спортзал не нужен." }
   },
   "criteria": { "ride": { "trigger": "minecraft:started_riding", "conditions": { "player": [ { "condition": "minecraft:entity_properties", "entity": "this", "predicate": { "minecraft:vehicle": { "minecraft:entity_type": "minecraft:horse" } } } ] } } }
 }

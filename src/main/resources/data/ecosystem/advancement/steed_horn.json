@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:goat_horn" },
     "title": { "text": "Рог-поводок" },
-    "description": { "text": "Рог, привязанный к лошади. Блестит; снять насовсем — только точильным камнем." }
+    "description": { "text": "Привяжи рог к лошади. Блестит; снять насовсем — только точильным камнем." }
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } }
 }

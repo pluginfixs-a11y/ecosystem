@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:nether_star" },
     "title": { "text": "Свояк" },
-    "description": { "text": "По одному трюку каждого мода. После этого ты знаешь о сервере больше, чем его вики." },
+    "description": { "text": "Закрой по одному трюку каждого мода. Дальше можно рассказывать, что ты тут всё знаешь." },
     "frame": "challenge"
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } },

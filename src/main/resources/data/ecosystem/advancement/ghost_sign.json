@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:oak_sign" },
     "title": { "text": "Надпись" },
-    "description": { "text": "Shift+ПКМ мембраной по табличке: у стены доска исчезает и текст ложится на стену граффити, у столба — висит в воздухе. Клуб невидимок открыт." }
+    "description": { "text": "Shift+ПКМ мембраной по табличке — доска исчезнет, текст останется на стене." }
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } }
 }

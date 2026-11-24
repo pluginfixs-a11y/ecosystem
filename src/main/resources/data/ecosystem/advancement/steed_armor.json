@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:iron_horse_armor" },
     "title": { "text": "Кавалерия" },
-    "description": { "text": "Броня лошади зачаровывается, и Защита реально работает. Кавалерия — не для красоты." }
+    "description": { "text": "Зачаруй конскую броню и прокатись в ней. Кавалерия, а не декор." }
   },
   "criteria": { "leather": { "trigger": "minecraft:enchanted_item", "conditions": { "item": { "items": "minecraft:leather_horse_armor" } } }, "copper": { "trigger": "minecraft:enchanted_item", "conditions": { "item": { "items": "minecraft:copper_horse_armor" } } }, "iron": { "trigger": "minecraft:enchanted_item", "conditions": { "item": { "items": "minecraft:iron_horse_armor" } } }, "golden": { "trigger": "minecraft:enchanted_item", "conditions": { "item": { "items": "minecraft:golden_horse_armor" } } }, "diamond": { "trigger": "minecraft:enchanted_item", "conditions": { "item": { "items": "minecraft:diamond_horse_armor" } } }, "netherite": { "trigger": "minecraft:enchanted_item", "conditions": { "item": { "items": "minecraft:netherite_horse_armor" } } } },
   "requirements": [["leather","copper","iron","golden","diamond","netherite"]]

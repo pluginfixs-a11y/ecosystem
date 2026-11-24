@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:white_stained_glass_pane" },
     "title": { "text": "Химчистка" },
-    "description": { "text": "В этом котле стирается даже стекло, свечи и упряжь гаста. Не спрашивай, как." },
+    "description": { "text": "Отстирни в котле стекло, свечу или упряжь гаста. Химия не задаёт вопросов." },
     "frame": "goal"
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } },

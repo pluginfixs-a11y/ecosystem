@@ -3,7 +3,7 @@
   "display": {
     "icon": { "id": "minecraft:spyglass" },
     "title": { "text": "Глушь" },
-    "description": { "text": "12 000 блоков от центра в Верхнем мире: мобы ×1.8 по здоровью, урон ≈×1.6, фантомы — стаей до десяти, а к тому, кто спал, по два." }
+    "description": { "text": "Дойди до 12000 от центра. Мобы толще, фантомы наглее, ночь длиннее." }
   },
   "criteria": { "code": { "trigger": "minecraft:impossible" } }
 }
