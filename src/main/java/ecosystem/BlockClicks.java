@@ -8,6 +8,7 @@ import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.inventory.MenuType;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.BundleItem;
 import net.minecraft.world.item.Item;
@@ -244,7 +245,7 @@ public final class BlockClicks {
 		 * которое реально открылось следующим тиком.
 		 */
 		private void fletcher() {
-			if (player.containerMenu != player.inventoryMenu) {
+			if (player.containerMenu.getType() == MenuType.HOPPER) {
 				Awards.award(player, Awards.FLETCHER_TABLE);
 			}
 			// Пустой мешок стол превращает в колчан на месте — прямо в руке.

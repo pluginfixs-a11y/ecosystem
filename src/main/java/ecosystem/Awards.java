@@ -153,8 +153,9 @@ public final class Awards {
 		if (!ours && (!ANOMALY_NS.equals(id.getNamespace()) || !ANOMALY_PATH.equals(id.getPath()))) {
 			return;
 		}
-		// Сам «Свояк» проверку не запускает: иначе выдача капстоуна рекурсивно звала бы себя же.
-		if (ours && ALL.equals(id.getPath())) {
+		// Капстоун пересчитываем только на головах веток: остальные ноды успех не меняют.
+		// Сам «Свояк» сюда не доходит — он не входит в BRANCHES, так что рекурсии нет.
+		if (ours && !inBranches(id.getPath())) {
 			return;
 		}
 		MinecraftServer server = player.level().getServer();
@@ -199,6 +200,15 @@ public final class Awards {
 		if (all != null && player.getAdvancements().award(all, CRITERION) && Ecosystem.DEBUG) {
 			Ecosystem.LOGGER.info("Ecosystem: {} -> {}", player.getPlainTextName(), ALL);
 		}
+	}
+
+	private static boolean inBranches(String path) {
+		for (String branch : BRANCHES) {
+			if (branch.equals(path)) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 	private static AdvancementHolder holder(MinecraftServer server, String namespace, String path) {

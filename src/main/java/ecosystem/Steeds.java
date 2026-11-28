@@ -60,7 +60,7 @@ final class Steeds {
 			return InteractionResult.PASS;
 		}
 		UUID bound = boundHorse(held);
-		if (bound == null || !bound.equals(horse.getUUID())) {
+		if (bound != null && bound.equals(horse.getUUID())) {
 			Awards.award(serverPlayer, Awards.STEED_HORN);
 		}
 		return InteractionResult.PASS;

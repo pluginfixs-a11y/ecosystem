@@ -58,7 +58,7 @@ final class Warps {
 				// Блеск снят не сам по себе: варп израсходовал компас (в креативе — нет).
 				// Смена слота или выброшенный компас тоже убирают блеск, но не меняют счёт в креативе
 				// и не проходят проверку «стало меньше» — так «Пара» не выдаётся за смену хотбара.
-				boolean consumed = player.hasInfiniteMaterials() || countCompasses(player) < watch.compasses;
+				boolean consumed = !player.hasInfiniteMaterials() && countCompasses(player) < watch.compasses;
 				if (consumed && nearLodestone(player)) {
 					Awards.award(player, Awards.WARP_PAIR);
 				}

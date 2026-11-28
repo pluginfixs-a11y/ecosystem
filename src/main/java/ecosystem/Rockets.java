@@ -131,7 +131,21 @@ final class Rockets {
 	}
 
 	static void forget(ServerPlayer player) {
-		ACTIVE.values().removeIf(track -> track.owner == player);
+		List<Integer> gone = null;
+		for (Map.Entry<Integer, Track> entry : ACTIVE.entrySet()) {
+			if (entry.getValue().owner == player) {
+				if (gone == null) {
+					gone = new ArrayList<>(2);
+				}
+				gone.add(entry.getKey());
+			}
+		}
+		if (gone != null) {
+			for (int id : gone) {
+				ACTIVE.remove(id);
+				HOMING.remove(id);
+			}
+		}
 	}
 
 	static void clear() {
